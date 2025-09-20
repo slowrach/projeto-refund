@@ -16,7 +16,7 @@ export function SignIn(){
 
    const auth = useAuth()
 
-   async function submit(prevState: any, formData: FormData){
+   async function submit(_: any, formData: FormData){
       try {
          const data = signInSchema.parse({
             email: formData.get("email"),
